@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset default styling and set font-family */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Set background color and center content vertically and horizontally */
+body {
+	background: #333; /* Black background color */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+/* Add margin to list items */
+li {
+	margin-left: 16px;
+}
+
+/* Set cursor style for links */
+a {
+	cursor: pointer;
+}
+
+/* Styling for the main container */
+.container {
+	max-width: 991px;
+	width: 100%;
+	background: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+/* Styling for the toolbar section */
+.toolbar {
+	padding: 16px;
+	background: #e4eaeb; /* Black background color */
+}
+
+/* Styling for the header section within the toolbar */
+.toolbar .head {
+	display: flex;
+	grid-gap: 10px;
+	margin-bottom: 16px;
+	flex-wrap: wrap;
+}
+
+/* Styling for input fields */
+.toolbar .head > input {
+	max-width: 100px;
+	padding: 6px 10px;
+	border-radius: 6px;
+	border: 2px solid #000000; /* White border */
+	outline: none;
+	color: #000; /* White text color */
+	background: White(255, 255, 255, 0.1); /* Transparent background */
+}
+
+/* Styling for select dropdowns */
+.toolbar .head select {
+	background:  #fff; /* Black background color */
+	border: 2px solid #110909; /* White border */
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+	color: #0e0101; /* White text color */
+}
+
+/* Styling for color pickers */
+.toolbar .head .color {
+	background: #fff; /* Black background color */
+	border: 2px solid #020101; /* White border */
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	grid-gap: 6px;
+	padding: 0 10px;
+	color: #0a0101; /* White text color */
+}
+
+/* Styling for color picker labels */
+.toolbar .head .color span {
+	font-size: 14px;
+}
+
+/* Styling for color picker input */
+.toolbar .head .color input {
+	border: none;
+	padding: 0;
+	width: 26px;
+	height: 26px;
+	background: #120808;
+	cursor: pointer;
+}
+
+/* Styling for color picker input in Firefox */
+.toolbar .head .color input::-moz-color-swatch {
+	width: 20px;
+	height: 20px;
+	border: none;
+	border-radius: 50%;
+}
+
+/* Styling for button toolbar */
+.toolbar .btn-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	grid-gap: 10px;
+}
+
+/* Styling for toolbar buttons */
+.toolbar .btn-toolbar button {
+	background: #000; /* Black background color */
+	border: 2px solid #fff; /* White border */
+	border-radius: 6px;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	color: #fff; /* White text color */
+}
+
+/* Styling for hovered toolbar buttons */
+.toolbar .btn-toolbar button:hover {
+	background: #333; /* Dark gray background color */
+}
+
+/* Styling for the content area */
+#content {
+	padding: 16px;
+	outline: none;
+	max-height: 50vh;
+	overflow: auto;
+	color: #fff; /* White text color */
+}
+
+/* Styling for the "Show Code" button when active */
+#show-code[data-active="true"] {
+	background: #333; /* Dark gray background color */
+}
